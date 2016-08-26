@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <!--  meta:vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>好久不见</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <!--  通过链入less文件和编译less的js文件可以在开发中使用less-->
+    <!--<link rel="stylesheet/less" href="less/main.less"/>-->
+</head>
+<body>
+<div class="jd-layout">
+    <!-- 头部区域 -->
+    <header class="jd-header">
+        <div class="jd-header-box">
+            <a href="#" class="icon-logo"></a>
+
+            <form action="get" class="jd-header-from">
+                <span class="icon-search"></span>
+                <input type="search" placeholder="随时搜一搜"/>
+            </form>
+            <a href="#" class="jd-header-login">登录</a>
+        </div>
+    </header>
+    <!-- /头部区域 -->
+    <!-- banner -->
+    <div class="jd-banner">
+        <ul>
+            <li><img src="img/l1.jpg" alt=""/></li>
+            <li><img src="img/l2.jpg" alt=""/></li>
+            <li><img src="img/l3.jpg" alt=""/></li>
+            <li><img src="img/l4.jpg" alt=""/></li>
+            <li><img src="img/l5.jpg" alt=""/></li>
+            <li><img src="img/l6.jpg" alt=""/></li>
+            <li><img src="img/l7.jpg" alt=""/></li>
+            <li><img src="img/l8.jpg" alt=""/></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- /banner -->
+
+    <!-- nav-->
+    <nav class="jd-nav">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="img/nav0.png" alt=""/>
+                    <p>分类查询</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/nav1.png" alt=""/>
+                    <p>物流查询</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/nav2.png" alt=""/>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/nav3.png" alt=""/>
+                    <p>我的京东</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/nav4.png" alt=""/>
+                    <p>充值</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/nav5.png" alt=""/>
+                    <p>领券中心</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/nav6.png" alt=""/>
+                    <p>京东超市</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/nav7.png" alt=""/>
+                    <p>我的关注</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /nav-->
+    <!-- 商品部分 主要部分使用main -->
+    <main class="jd-product">
+        <!-- 秒杀区-->
+        <section class="product-box secondKill">
+            <div class="product-top no-bor">
+                <div class="sk-left">
+                    <span class="sk-left-clock"></span>
+                    <h4 class="sk-left-title">掌上秒杀</h4>
+                    <div class="sk-left-time">
+                        <span class="num">0</span>
+                        <span class="num">0</span>
+                        <span class="str">:</span>
+                        <span class="num">0</span>
+                        <span class="num">0</span>
+                        <span class="str">:</span>
+                        <span class="num">0</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+                <div class="sk-right">
+                    <a href="#" class="sk-right-more">更多></a>
+                </div>
+            </div>
+            <div class="product-bot">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <div class="sk-img">
+                                <img src="img/detail01.jpg" alt=""/>
+                            </div>
+                            <span class="sk-money-new">￥20.00</span>
+                            <span class="sk-money-old">￥200.00</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sk-img">
+                                <img src="img/detail01.jpg" alt=""/>
+                            </div>
+                            <span class="sk-money-new">￥20.00</span>
+                            <span class="sk-money-old">￥200.00</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sk-img">
+                                <img src="img/detail01.jpg" alt=""/>
+                            </div>
+                            <span class="sk-money-new">￥20.00</span>
+                            <span class="sk-money-old">￥200.00</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="product-box">
+            <div class="product-top">
+                <h3>超值购</h3>
+            </div>
+            <div class="product-bot clearfix">
+                <a href="#" class="pic-left bor-right"><img src="img/cp1.jpg" alt=""/></a>
+                <a href="#" class="pic-right bor-bot"><img src="img/cp2.jpg" alt=""/></a>
+                <a href="#" class="pic-right"><img src="img/cp3.jpg" alt=""/></a>
+            </div>
+        </section>
+        <section class="product-box">
+            <div class="product-top">
+                <h3>热门活动</h3>
+            </div>
+            <div class="product-bot clearfix">
+                <a href="#" class="pic-right bor-left"><img src="img/cp4.jpg" alt=""/></a>
+                <a href="#" class="pic-left bor-bot"><img src="img/cp5.jpg" alt=""/></a>
+                <a href="#" class="pic-left"><img src="img/cp6.jpg" alt=""/></a>
+            </div>
+        </section>
+    </main>
+    <!-- /商品部分 -->
+
+</div>
+</body>
+<!--<script src="lib/less/less.js"></script>-->
+</html>

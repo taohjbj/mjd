@@ -1,0 +1,305 @@
+body {
+  background-color: #f5f5f5;
+}
+// 京东模板需要最大值和最小值
+.jd-layout {
+  max-width: 640px;
+  min-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+// 头部外面一层需要固定定位 如果是头部直接固定定位那么就不能使用margin居中
+.jd-header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2222;
+  // 搜索头部内容
+  .jd-header-box {
+    max-width: 640px;
+    min-width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgba(201,21,35,0.85);
+    position: relative;
+    // 右边logo
+    .icon-logo {
+      background-position: 0 -103px;
+      width: 60px;
+      height: 36px;
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 10px;
+    }
+    // 中间搜索框 它需要自动伸缩宽为100%;左右两个绝对定位脱离文档流；然后给出padding值留出位置；
+    .jd-header-from {
+      width: 100%;
+      height: 40px;
+      padding: 0 50px 0 75px;
+      position: relative;
+      // 放大镜
+      .icon-search {
+        background-position: -60px -109px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        left: 85px;
+      }
+      // 表单下面的search
+      input {
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;
+        border-radius: 15px;
+        padding: 0 30px;
+      }
+    }
+    // 登录按钮
+    .jd-header-login {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 40px;
+      font-size: 15px;
+      line-height: 40px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}
+// banner部分
+.jd-banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  ul:first-child {
+    width: 800%;
+    li {
+      width: 12.5%;
+      float: left;
+      img {
+        // 图片是行内级元素所以要设置框，它才会跟着伸缩
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  // 小圆点
+  ul:last-child {
+    position: absolute;
+    bottom: 10px;
+    width: 118px;
+    height: 6px;
+    left: 50%;
+    margin-left: -59px;
+    li {
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      border: 1px solid #FFFFFF;
+      margin-left: 10px;
+      float: left;
+    }
+    // 第一个点点没有marginleft
+    li:first-child {
+      margin-left: 0px;
+    }
+  }
+}
+// nav部分
+.jd-nav {
+  width: 100%;
+  height: 150px;
+  padding:11px 3.125% 0;
+  border-bottom: 1px solid #e0e0e0;
+  background: #FFFFFF;
+  // 具体样式
+  ul {
+    width: 100%;
+    li {
+      width: 25%;
+      height: 69px;
+      float: left;
+      text-align: center;
+      // li下面的图片需要缩小2倍
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        img {
+          display: block;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+        }
+        p {
+          font-size: 12px;
+          color: #666;
+          padding-top: 6px;
+        }
+      }
+    }
+  }
+}
+// product部分 公共部分 ；
+.jd-product {
+  margin: 0 5px;
+  .product-box {
+    background: #FFFFFF;
+    margin-top: 8px;
+    // 有下边框的类
+    .product-top {
+      height: 32px;
+      border-bottom: 1px solid #e0e0e0;
+      position: relative;
+      // 除了秒杀之外的top上面都有相同的样式
+      h3 {
+        font-size: 15px;
+        color: #666;
+        font-weight: inherit;
+        line-height: 32px;
+        padding-left: 15px;
+        // 同级用&连接 用伪类做红条
+        &::before {
+          content: '';
+          width: 3px;
+          height: 12px;
+          background-color: #e92233;
+          float: left;
+          position: absolute;
+          top: 10px;
+          left: 8px;
+        }
+      }
+    }
+    // top没有下边框的类
+    .no-bor {
+      border-bottom: none;
+    }
+    .product-bot {
+      width: 100%;
+    }
+  }
+}
+// secondKill/普通区
+.jd-product {
+  // product secondKill
+  .secondKill {
+    // product secondKill上半区
+    .product-top{
+      .sk-left {
+        // 时钟需要缩小
+        .sk-left-clock {
+          width: 16px;
+          height: 20px;
+          background: url("../img/seckill-icon.png") no-repeat;
+          background-size: 16px 20px;
+          float: left;
+          margin: 6px 0 0 8px;
+        }
+        .sk-left-title {
+          float: left;
+          line-height: 32px;
+          color: #d8505c;
+          padding-left: 5px;
+        }
+        .sk-left-time {
+          float: left;
+          line-height: 15px;
+          text-align: center;
+          margin-left: 5px;
+          .num {
+            width: 15px;
+            height: 15px;
+            background-color: #333;
+            color: #FFFFFF;
+            float: left;
+            margin: 8px 0 0 3px;
+          }
+          .str {
+            width: 5px;
+            height: 15px;
+            color: #000;
+            float: left;
+            margin: 8px 0 0 3px;
+          }
+        }
+      }
+      .sk-right {
+        .sk-right-more {
+          float: right;
+          line-height: 32px;
+          color: #000;
+          margin-right: 10px;
+        }
+      }
+    }
+    // product secondKill下半区
+    .product-bot {
+      ul {
+        padding: 10px 0;
+        width: 100%;
+        li {
+          width: 33.33%;
+          float: left;
+          .sk-img {
+            width: 100%;
+            img {
+              width: 64%;
+              display: block;
+              margin: 0 auto;
+            }
+          }
+          // 秒杀价格
+          span {
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 3px;
+          }
+          .sk-money-new {
+            color: #d8505c;
+          }
+          .sk-money-old {
+            text-decoration: line-through;
+            color: #888;
+          }
+
+        }
+        // 这里sk-img不是亲兄弟但是它的父辈是亲的；通过父辈找到它
+        li+li .sk-img {
+          border-left: 1px solid #c0c0c0;
+        }
+      }
+    }
+  }
+  // product 普通区域提取样式
+  .product-bot {
+    .pic-left {
+      float: left;
+      width: 50%;
+    }
+    .bor-left {
+      border-left: 1px solid #c0c0c0;
+    }
+    .pic-right {
+      float: right;
+      width: 50%;
+    }
+    .bor-right {
+      border-right: 1px solid #c0c0c0;
+    }
+    .bor-bot {
+      border-bottom: 1px solid #c0c0c0;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
