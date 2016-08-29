@@ -1,0 +1,147 @@
+// 首先占满整个屏幕；两种方式；所有父级宽高100%；或者body脱标
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+// topBar宽度为100% 高度固定；和首页导航条相同；search伸缩布局;可以作为基本样式
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #e0e0e0;
+  background: url("../img/header-bg.png") repeat-x;
+  // 缩小一倍更清晰
+  background-size: 1px 44px;
+  // 返回图标
+  .icon-back {
+    position: absolute;
+    width: 40px;
+    height: 44px;
+    background-position: -20px 0;
+    padding: 12px 10px;
+    // 使用背景切割显示中间那坨
+    background-clip: content-box;
+    background-origin: content-box;
+  }
+  // 搜索框
+  .topBar-from {
+    height: 44px;
+    width: 100%;
+    padding: 6px 40px;
+    input {
+      width: 100%;
+      height: 32px;
+      border: 1px solid #bfbfbf;
+      border-radius: 4px;
+    }
+  }
+  // 菜单按钮
+  .icon-menu {
+    width: 20px;
+    height: 20px;
+    background-position: -60px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 12px 10px;
+  }
+}
+
+// 主要分类也需要占满整个屏幕；使用100%顶部用margin或者padding隔开通栏
+.categroy {
+  width: 100%;
+  height: 100%;
+  // 不能使用margin；本来就是100%再使用margin就会再100%的基础上增加45px就超出屏幕了
+  padding-top: 45px;
+  // 左边分类 我用的是浮动 还可以定位
+  .categroy-left {
+    width: 90px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    li {
+      width: 90px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      background: #f3f4f6;
+      border-bottom: 1px solid #e0e0e0;
+      border-right: 1px solid #e0e0e0;
+      a {
+        display: block;
+        color: #000;
+        font-size: 12px;
+        font-family: sans-serif;
+      }
+      // 当前li处于选中状态
+      &.now {
+        background-color: #fff;
+        border: 0;
+        a {
+          color: #d8505c;
+        }
+      }
+    }
+  }
+  // 右边商品展示
+  .categroy-right {
+    width: 100%;
+    height: 100%;
+    padding-left: 90px;
+    // 因为周围需要padding所以在所有东西里面再套盒子
+    .categroy-right-box {
+      padding: 10px 12px;
+      // 右边banner
+      .categroy-right-banner img {
+        width: 100%;
+      }
+    }
+    .categroy-right-product {
+      // 热门分类
+      h3 {
+        // em就是根据父级的字号的一倍来设置行高；rem根据html字号设置行号；可以灵活设置网页布局
+        line-height: 1em;
+        font-size: 12px;
+        color: #888;
+        padding-top: 8px;
+      }
+      // 商品展示
+      ul {
+        width: 100%;
+        padding-top: 10px;
+        li {
+          width: 33.33%;
+          float: left;
+          height: 90px;
+          text-align: center;
+          // 要像图片不伸缩变形 那么就给它设置高度
+          img {
+            height: 62px;
+          }
+          p {
+            font-size: 12px;
+            margin: 5px 0 9px 0;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

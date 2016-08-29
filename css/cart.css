@@ -1,0 +1,347 @@
+.jd-main {
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  padding-top: 45px;
+  padding-bottom: 57px;
+}
+.jd-main .jd-safe {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  background: #FFFFFF;
+  border-bottom: 1px solid #e0e0e0;
+}
+.jd-main .jd-safe p {
+  line-height: 35px;
+  color: #686868;
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+}
+.jd-main .jd-safe p::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: url("../img/safe_icon.png") no-repeat;
+  background-size: 18px 18px;
+}
+.jd-main .jd-buy {
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  position: relative;
+  border-top: 1px solid #e0e0e0;
+}
+.jd-main .jd-buy .jd-buy-title {
+  border-bottom: 1px solid #e0e0e0;
+}
+.jd-main .jd-buy .jd-buy-title .buy-check-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 35px;
+  padding: 7px 10px;
+}
+.jd-main .jd-buy .jd-buy-title .buy-title {
+  width: 100%;
+  padding-left: 40px;
+  line-height: 35px;
+}
+.jd-main .jd-buy .jd-buy-title .buy-title img {
+  float: left;
+  width: 15px;
+  height: 13px;
+  margin: 11px 5px 0 0;
+}
+.jd-main .jd-buy .jd-buy-title .buy-title .buy-myself {
+  float: left;
+}
+.jd-main .jd-buy .jd-buy-title .buy-title .buy-baoyou {
+  float: right;
+  color: #f15353;
+}
+.jd-main .jd-buy .jd-buy-info {
+  background-color: #fff;
+  position: relative;
+}
+.jd-main .jd-buy .jd-buy-info .buy-check-box {
+  width: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+.jd-main .jd-buy .jd-buy-info img {
+  width: 78px;
+  height: 78px;
+  float: left;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info {
+  padding: 10px 10px 0 40px;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all {
+  padding-left: 85px;
+  height: 80px;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all .buy-info-title {
+  font-size: 13px;
+  line-height: 15px;
+  height: 30px;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all .buy-info-price {
+  margin-bottom: 8px;
+  line-height: 13px;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all .buy-info-changeNum span {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 24px;
+  border: 1px solid #c0c0c0;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all .buy-info-changeNum .buy-info-trash {
+  float: right;
+  border: 0;
+  width: 19px;
+  height: 20px;
+  cursor: pointer;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all .buy-info-changeNum .buy-info-trash .trash-top {
+  display: block;
+  background: url("../img/delete_up.png");
+  background-size: 20px 5px;
+  width: 20px;
+  height: 5px;
+  margin-left: -1px;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all .buy-info-changeNum .buy-info-trash .trash-bot {
+  display: block;
+  background: url("../img/delete_down.png");
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  margin-top: -3px;
+}
+.jd-main .jd-buy .jd-buy-info .buy-info .buy-info-all input {
+  width: 32px;
+  height: 24px;
+  float: left;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+  text-align: center;
+}
+.jd-main .jd-buy li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.jd-option {
+  width: 100%;
+  height: 57px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  color: #FFFFFF;
+}
+.jd-option .jd-option-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 57px;
+  padding: 20px 0 0 10px;
+}
+.jd-option .jd-option-left span {
+  float: left;
+  font-size: 12px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.jd-option .jd-option-con {
+  width: 100%;
+  height: 57px;
+  padding: 0 70px;
+}
+.jd-option .jd-option-con p:first-child {
+  font-size: 16px;
+  line-height: 32px;
+}
+.jd-option .jd-option-con p:last-child {
+  font-size: 10px;
+  opacity: 0.8;
+}
+.jd-option .jd-option-right {
+  width: 116px;
+  height: 57px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f15353;
+  text-align: center;
+  line-height: 57px;
+}
+.jd-option .jd-option-right a {
+  font-size: 18px;
+  color: #FFFFFF;
+  width: 116px;
+  height: 57px;
+}
+.buy-check {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/shop-icon.png") no-repeat;
+  background-size: 50px 100px;
+}
+.buy-check[checked] {
+  background-position: -25px 0;
+}
+
+/* 弹窗 */
+.tanWin {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.tanWin .grayBox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.tanWin .content {
+  width: 400px;
+  height: 150px;
+  position: fixed;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 30%;
+  border-radius: 5px;
+  color: #888;
+  background-color: #fff;
+  padding: 0 20px;
+  opacity: 0;
+}
+.tanWin .title {
+  text-align: center;
+  line-height: 70px;
+  font-size: 20px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.tanWin .info {
+  padding: 20px;
+}
+.tanWin .tanWin-delete,
+.tanWin .tanWin-cancle {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #c0c0c0;
+  cursor: pointer;
+}
+.tanWin .tanWin-delete {
+  float: left;
+  background-color: #d8505c;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.tanWin .tanWin-cancle {
+  float: right;
+  background-color: #fff;
+  color: #c0c0c0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+/* 通过增加类的方式实现弹窗动画 */
+@keyframes tanWin {
+  0% {
+    transform: translateY(-2000px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(-20px);
+  }
+  95% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+/*@keyframes tanWin {
+  0%, 100%, 60%, 75%, 90% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, -3000px, 0px);
+    -webkit-transform: translate3d(0px, -3000px, 0px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0px, 25px, 0px);
+    -webkit-transform:translate3d(0px, 25px, 0px);
+  }
+  75% {
+    transform: translate3d(0px, -10px, 0px);
+    -webkit-transform:translate3d(0px, -10px, 0px);
+  }
+  90% {
+    transform: translate3d(0px, 5px, 0px);
+    -webkit-transform:translate3d(0px, 5px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    -webkit-transform:none;
+  }
+}*/
+.current {
+  transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  animation: tanWin 1s forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

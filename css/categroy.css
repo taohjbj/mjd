@@ -1,0 +1,73 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.categroy {
+  width: 100%;
+  height: 100%;
+  padding-top: 45px;
+}
+.categroy .categroy-left {
+  width: 90px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.categroy .categroy-left li {
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.categroy .categroy-left li a {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.categroy .categroy-left li.now {
+  background-color: #fff;
+  border: 0;
+}
+.categroy .categroy-left li.now a {
+  color: #d8505c;
+}
+.categroy .categroy-right {
+  width: 100%;
+  height: 100%;
+  padding-left: 90px;
+}
+.categroy .categroy-right .categroy-right-box {
+  padding: 10px 12px;
+}
+.categroy .categroy-right .categroy-right-box .categroy-right-banner img {
+  width: 100%;
+}
+.categroy .categroy-right .categroy-right-product h3 {
+  line-height: 1em;
+  font-size: 12px;
+  color: #888;
+  padding-top: 8px;
+}
+.categroy .categroy-right .categroy-right-product ul {
+  width: 100%;
+  padding-top: 10px;
+}
+.categroy .categroy-right .categroy-right-product ul li {
+  width: 33.33%;
+  float: left;
+  height: 90px;
+  text-align: center;
+}
+.categroy .categroy-right .categroy-right-product ul li img {
+  height: 62px;
+}
+.categroy .categroy-right .categroy-right-product ul li p {
+  font-size: 12px;
+  margin: 5px 0 9px 0;
+  color: #000;
+}
